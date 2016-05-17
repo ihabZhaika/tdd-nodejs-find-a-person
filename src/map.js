@@ -7,6 +7,6 @@ Map.prototype.find_a_person = function(name) {
   return ["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley"];
   };
 Map.prototype.find_a_person_location = function(name) {
-  return false;
+  return true;
 };
 module.exports = Map;
