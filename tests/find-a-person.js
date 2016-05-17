@@ -17,3 +17,11 @@ describe('Find a person by location', function() {
     expect(posts).to.be.eql(true);
   });
 });
+
+describe('Check if there are map inconsistencies', function() {
+  it('Given a name, check if it  included in more than one place (a place or geo. location)', function() {
+    var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
+    var locations = map.is_map_inconsistencies("Or A.");
+    expect(locations).to.be.eql(true);
+  });
+});
