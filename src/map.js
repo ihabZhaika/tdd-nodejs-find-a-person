@@ -9,4 +9,7 @@ Map.prototype.find_a_person = function(name) {
 Map.prototype.find_a_person_location = function(name) {
   return true;
 };
+Map.prototype.is_map_inconsistencies = function(name) {
+  return true;
+};
 module.exports = Map;
